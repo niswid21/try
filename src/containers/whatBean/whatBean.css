@@ -1,0 +1,49 @@
+.whatbean__whatbean {
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 2 rem;
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(255, 255, 134, 1) 0%, rgba(255, 150, 92, 1) 50%, rgba(205, 91, 78, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(255, 255, 134, 1) 0%, rgba(255, 150, 92, 1) 50%, rgba(205, 91, 78, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(255, 255, 134, 1) 0%, rgba(255, 150, 92, 1) 50%, rgba(205, 91, 78, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CD5B4E', endColorstr='#FFFF86', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(255, 255, 134, 1) 0%, rgba(255, 150, 92, 1) 50%, rgba(205, 91, 78, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(255, 255, 134, 1) 0%, rgba(255, 150, 92, 1) 50%, rgba(205, 91, 78, 1) 100%);    
+}
+
+.whatbean__whatbean-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .whatbean__whatgpt3-feature  {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .whatbean__whatgpt3-feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

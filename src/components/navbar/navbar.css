@@ -1,0 +1,163 @@
+.whatbean__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.whatbean__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.whatbean__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.whatbean__navbar-links_logo img {
+    width: 118px;
+    height: 15px;
+}
+
+.whatbean__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.whatbean__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.whatbean__navbar-links_container p,
+.whatbean__navbar-sign p,
+.whatbean__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size:18px;
+    line-height: 20px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
+
+.whatbean__navbar-sign button,
+.whatbean__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-family: var(--font-family);
+    left: 1153px;
+    top: 55px;
+    font-size: 18px;
+    line-height: 25px;
+        /* ff 3.6+ */
+        background:-moz-linear-gradient(90deg, rgba(216, 148, 110, 1) 0%, rgba(237, 115, 76, 1) 100%); 
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-linear-gradient(90deg, rgba(216, 148, 110, 1) 0%, rgba(237, 115, 76, 1) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-linear-gradient(90deg, rgba(216, 148, 110, 1) 0%, rgba(237, 115, 76, 1) 100%);
+    
+        /* ie 6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ED734C', endColorstr='#D8946E', GradientType=0 );
+    
+        /* ie 10+ */
+        background:-ms-linear-gradient(90deg, rgba(216, 148, 110, 1) 0%, rgba(237, 115, 76, 1) 100%);
+    
+        /* global 94%+ browsers support */
+        background:linear-gradient(90deg, rgba(216, 148, 110, 1) 0%, rgba(237, 115, 76, 1) 100%);
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+}
+
+.whatbean__navbar-menu {
+    margin-left: 1 rem;
+
+    display: none;
+    position: relative;
+}
+
+.whatbean__navbar-menu svg{
+    cursor: pointer;
+}
+
+.whatbean__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(167, 55, 55, 1) 0%, rgba(122, 40, 40, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(167, 55, 55, 1) 0%, rgba(122, 40, 40, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(167, 55, 55, 1) 0%, rgba(122, 40, 40, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(167, 55, 55, 1) 0%, rgba(122, 40, 40, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(167, 55, 55, 1) 0%, rgba(122, 40, 40, 1) 100%);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.whatbean__navbar-menu_container p{
+    margin: 1rem 0;
+}
+
+.whatbean__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .whatbean__navbar-links_container {
+        display: none;
+    }
+    .whatbean__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whatbean__navbar {
+        padding: 2rem 4rem;
+    }    
+}
+
+@media screen and (max-width: 550px) {
+    .whatbean__navbar {
+        padding: 2rem;
+    }  
+    
+    .whatbean__navbar-sign{
+        display: none;
+    }
+    
+    .whatbean__navbar-menu_container {
+        top: 20px;
+    }
+
+    .whatbean__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
